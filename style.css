@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Courgette&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Courgette&display=swap");
 
 :root {
   --bg-color: rgb(232, 232, 232);
@@ -21,36 +20,57 @@
   font-style: normal;
 }
 
-h1{
-    margin: auto;
-    text-align: center;
-    font-size: 60px;
+h1 {
+  margin: auto;
+  text-align: center;
+  font-size: 60px;
 }
 
-h2{
-    text-align: center;
-    font-size: 30px;
+h2 {
+  text-align: center;
+  font-size: 30px;
 }
 
-.collection{
-    margin: 0px 100px 0px 100px;
-    display: flex;
+.collection {
+  margin: 0px 100px 0px 100px;
+  display: flex;
 }
 
-.meme{
-    display: flex;
-    flex-direction: column;
-     border-radius: 20px;
-    overflow: hidden;
+.meme {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-.meme-image{
-    height: 300px;
-    width: 300px;
-   
+.meme-image {
+  height: 300px;
+  width: 300px;
 }
-.meme-image > img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+.meme-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
+#myForm {
+  font-family: Arial, sans-serif;
+}
+
+.txt-input {
+  margin-bottom: 12px;
+}
+
+.txt-input label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.txt-input input {
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 14px;
+}
+

@@ -9,13 +9,13 @@
   background-color: var(--bg-color);
 }
 
-.bangers-regular {
+.heading {
   font-family: "Bangers", system-ui;
   font-weight: 400;
   font-style: normal;
 }
 
-.courgette-regular {
+.text {
   font-family: "Courgette", cursive;
   font-weight: 400;
   font-style: normal;
@@ -32,3 +32,25 @@ h2{
     font-size: 30px;
 }
 
+.collection{
+    margin: 0px 100px 0px 100px;
+    display: flex;
+}
+
+.meme{
+    display: flex;
+    flex-direction: column;
+     border-radius: 20px;
+    overflow: hidden;
+}
+
+.meme-image{
+    height: 300px;
+    width: 300px;
+   
+}
+.meme-image > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

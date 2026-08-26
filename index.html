@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>LOL Factory</h1>
-    <h2>Random Meme Generator</h2>
-    <p><button onclick="draw()">Tryit</button></p>
-    <div class="images">
-      <img id="spiderman" src="memes/spider-man.jpg" alt="" />
-    </div>
+    <h1 class="bangers-regular">LOL Factory</h1>
+    <h2 class="bangers-regular">Random Meme Generator</h2>
 
+    <div class="collection">
+      <div class="meme">
+        <img id="spiderman" src="memes/spider-man.jpg" alt="spiderman meme" />
+        <button onclick="draw('spiderman')">Try it</button>
+      </div>
+    </div>
+    
     <canvas id="myCanvas" width="300" height="300"></canvas>
 
     <script src="app.js"></script>

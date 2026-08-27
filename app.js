@@ -3,7 +3,7 @@ const ctx = c.getContext("2d");
 
 function draw(meme) {
   const img = document.getElementById(meme);
-  ctx.drawImage(img, 10, 10, 400, 400);
+  ctx.drawImage(img, 0, 0, 400, 400);
 }
 
 let form = document.getElementById("myForm");

@@ -31,6 +31,13 @@ main {
   margin: 0px 100px;
 }
 
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -52,11 +59,16 @@ canvas {
   padding: 20px;
   border-radius: 20px;
   background-color: white;
+  max-width: 100%;
+  height: auto;
 }
 
 .collection {
-  display: flex;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
 }
 
 .meme {
@@ -68,11 +80,6 @@ canvas {
   background-color: var(--gray);
   overflow: hidden;
   align-items: center;
-}
-
-.meme-image {
-  height: 300px;
-  width: 300px;
 }
 
 .meme-image > img {
@@ -100,4 +107,46 @@ canvas {
   border: 1px solid black;
   border-radius: 4px;
   font-size: 14px;
+}
+
+.btn {
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  main {
+    margin: 0px 30px;
+  }
+
+  .collection {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .section {
+    flex-direction: column;
+  }
+
+  .collection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 445px) {
+  main {
+    margin: 0px 10px;
+  }
+
+  .collection {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  canvas {
+    padding: 10px;
+  }
 }

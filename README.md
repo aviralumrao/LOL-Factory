@@ -1,13 +1,13 @@
 # LOL-Factory
- just like the memes we see every day online.
+A simple meme generator, just like the memes we see every day online.
 
-🌐 Live Demo
-Check it out here: https://aviralumrao.github.io/LOL-Factory/
+## 🌐 Live Demo
+Check it out here: [LOL-Factory](https://aviralumrao.github.io/LOL-Factory/)
 
-📖 About
-LOL factory is a simple website where you can add text over your favourite meme faces and download them.
+## 📖 About
+**LOL Factory** is a simple website that lets you add custom text to your favourite meme faces and download the created memes.
 
-🛠️ Tech Stack
-- HTML
-- CSS
-- JavaScript
+## 🛠️ Tech Stack
+* HTML
+* CSS
+* JavaScript

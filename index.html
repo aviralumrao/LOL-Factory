@@ -7,35 +7,72 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 class="heading">LOL Factory</h1>
-    <h2 class="heading">Random Meme Generator</h2>
+    <header>
+      <h1 class="heading">LOL Factory</h1>
+      <h2 class="heading">Random Meme Generator</h2>
+    </header>
 
-    <h3 class="text">Select the meme template</h3>
-    <div class="collection">
-      <div class="meme">
-        <div class="meme-image">
-          <img id="spiderman" src="memes/spider-man.jpg" alt="spiderman meme" />
+    <main>
+      <div class="container">
+        <h2 class="heading">Canvas Area</h2>
+        <canvas id="myCanvas" width="400" height="400"></canvas>
+        <button onclick="clearCanvas()">Clear Canvas</button>
+      </div>
+
+      <div class="container">
+        <h2 class="text">Select the meme template</h2>
+        <div class="collection">
+          <div class="meme">
+            <div class="meme-image">
+              <img
+                id="spiderman"
+                src="memes/spider-man.jpg"
+                alt="spiderman meme"
+              />
+            </div>
+            <button onclick="draw('spiderman')">Try it</button>
+          </div>
+          <div class="meme">
+            <div class="meme-image">
+              <img
+                id="ravikisan"
+                src="memes/ravi_kisan.jpg"
+                alt="ravikisan meme"
+              />
+            </div>
+            <button onclick="draw('ravikisan')">Try it</button>
+          </div>
+          <div class="meme">
+            <div class="meme-image">
+              <img
+                id="man"
+                src="memes/man.jpg"
+                alt="man meme"
+              />
+            </div>
+            <button onclick="draw('man')">Try it</button>
+          </div>
+          
+          
+
         </div>
-        <button onclick="draw('spiderman')">Try it</button>
       </div>
-    </div>
 
-    <h3 class="text">Enter the Text for the meme</h3>
-    <form id="myForm">
-      <div class="txt-input">
-        <label for="toptxt">Top Text:</label>
-        <input type="text" id="top-text" name="top-text" />
+      <div class="container">
+        <h2 class="text">Enter the Text for the meme</h2>
+        <form id="myForm">
+          <div class="txt-input">
+            <label for="toptxt">Top Text:</label>
+            <input type="text" id="top-text" name="top-text" />
+          </div>
+          <div class="txt-input">
+            <label for="lname">Bottom Text:</label>
+            <input type="text" id="bottom-text" name="bottom-text" />
+          </div>
+          <input id="submitbtn" type="submit" value="submit" />
+        </form>
       </div>
-      <div class="txt-input">
-        <label for="lname">Bottom Text:</label>
-        <input type="text" id="bottom-text" name="bottom-text" />
-      </div>
-      <input id="submitbtn" type="submit" value="submit">
-    </form>
-
-    <button onclick="clearCanvas()">Clear Canvas</button>
-
-    <canvas id="myCanvas" width="400" height="400"></canvas>
+    </main>
 
     <script src="app.js"></script>
   </body>

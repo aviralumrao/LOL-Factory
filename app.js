@@ -6,20 +6,17 @@ function draw(meme) {
   ctx.drawImage(img, 10, 10, 400, 400);
 }
 
-let toptxt = document.getElementById("top-text");
+let form = document.getElementById("myForm");
 
-toptxt.addEventListener("input", () => {
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  let toptxt = document.getElementById("top-text");
+  let bottomtxt = document.getElementById("bottom-text");
   console.log(toptxt.value);
-  ctx.font = "20px Georgia white";
-  ctx.textAlign = "center";
-  ctx.fillText(toptxt.value, 200, 100);
-});
-
-let bottomtxt = document.getElementById("bottom-text");
-
-bottomtxt.addEventListener("input", () => {
   console.log(bottomtxt.value);
   ctx.font = "20px Georgia white";
   ctx.textAlign = "center";
+  ctx.fillText(toptxt.value, 200, 100);
   ctx.fillText(bottomtxt.value, 200, 300);
 });
+
